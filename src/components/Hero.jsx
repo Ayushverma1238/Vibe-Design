@@ -112,7 +112,7 @@ export default function Hero() {
 
           {/* Image */}
           <motion.img
-            src="/ai-agent.png"
+            src="src\assets\ai-agent.png"
             alt="AI Agent"
             className="relative w-80 md:w-105 animate-float"
             whileHover={{ scale: 1.05 }}

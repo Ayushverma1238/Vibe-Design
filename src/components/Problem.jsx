@@ -9,7 +9,7 @@ export default function Problem() {
   ];
 
   return (
-    <section className="relative py-36 px-6 bg-black overflow-hidden">
+    <section className="relative py-20 px-6 bg-black overflow-hidden">
 
       {/* 🌌 Background */}
       <div className="absolute inset-0 bg-linear-to-br from-purple-900/30 via-black to-pink-900/20 blur-3xl"></div>
@@ -127,33 +127,6 @@ export default function Problem() {
         </motion.div>
       </div>
 
-      {/* 🔽 STORY TRANSITION */}
-      <div className="relative mt-24 h-40">
-
-        {/* Gradient fade */}
-        <div className="absolute inset-0 bg-linear-to-b from-transparent via-purple-900/20 to-black"></div>
-
-        {/* Line */}
-        <motion.div
-          className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full 
-          bg-linear-to-b from-red-400 via-purple-400 to-transparent"
-          animate={{ opacity: [0.2, 1, 0.2] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        />
-
-        {/* Moving dot */}
-        <motion.div
-          className="absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-red-400 rounded-full shadow-lg"
-          animate={{
-            y: [0, 140],
-            opacity: [0, 1, 0],
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 2,
-          }}
-        />
-      </div>
     </section>
   );
 }
