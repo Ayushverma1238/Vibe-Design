@@ -90,7 +90,7 @@ export default function Hero() {
 
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="border border-white/20 px-6 py-3 rounded-xl text-lg hover:bg-white/10 transition"
+              className="border cursor-pointer border-white/20 px-6 py-3 rounded-xl text-lg hover:bg-white/10 transition"
             >
               Watch Demo
             </motion.button>
@@ -112,7 +112,7 @@ export default function Hero() {
 
           {/* Image */}
           <motion.img
-            src="src\assets\ai-agent.png"
+            src="../ai-agent.png"
             alt="AI Agent"
             className="relative w-80 md:w-105 animate-float"
             whileHover={{ scale: 1.05 }}
@@ -156,7 +156,7 @@ function MagneticButton({ children }) {
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.95 }}
       className="relative px-6 py-3 rounded-xl text-lg font-medium 
-      bg-linear-to-r from-purple-500 to-pink-500 
+      bg-linear-to-r from-purple-500 to-pink-500 cursor-pointer 
       shadow-lg hover:shadow-purple-500/30 transition"
     >
       {children}
