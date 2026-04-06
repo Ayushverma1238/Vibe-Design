@@ -101,7 +101,7 @@ function MagneticButton({ children }) {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             whileHover={{ scale: 1.05 }}
-            className="relative px-5 py-2 rounded-lg font-medium text-sm bg-linear-to-r from-purple-500 to-pink-500 shadow-lg hover:shadow-purple-500/40 transition"
+            className="relative px-5 cursor-pointer py-2 rounded-lg font-medium text-sm bg-linear-to-r from-purple-500 to-pink-500 shadow-lg hover:shadow-purple-500/40 transition"
         >
             {children}
 
